@@ -23,12 +23,12 @@ jobs:
 
       - name: Install Prettier
         run: npm install -g prettier
+
+      - name: Run Prettier and auto-fix issues
+        run: prettier --write "./src/"
         
       - name: Run linter
         run: npm run lint
-
-      - name: Run code formatter
-        run: npm run prettier
 
       - name: Run tests
         run: CI=true npm run test
