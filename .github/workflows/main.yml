@@ -20,9 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        
+
       - name: Install Prettier
         run: npm install -g prettier
+        
       - name: Run linter
         run: npm run lint
 
